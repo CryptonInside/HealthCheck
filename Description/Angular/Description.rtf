@@ -1,0 +1,163 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset204 Calibri;}{\f2\fnil Calibri;}{\f3\fnil Consolas;}{\f4\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red163\green21\blue21;\red43\green145\blue175;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Start up project angular (with command CLI, when commands use for create app)\par
+dotnet new ...\par
+or\par
+ng new ...\par
+\par
+The Angular front-end\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\lang1033 CLientApp root - folder, which hosts (\f1\lang1049\'f0\'e0\'e7\'ec\'e5\'f9\'e0\'e5\'f2\'f1\'ff) \f0\lang1033 the Angular (and package manager) conf file (\f1\lang1049\'f4\'e0\'e9\'eb\'fb \'f1 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e0\'ec\'e8) \f0\lang9\par
+{\pntext\f4\'B7\tab}/ClientApp/src/ - folder, which contains Angular app source code files, If we look at them, we can see that they all have a .ts extension, which means we'll be using th TypeScript progr lang\par
+{\pntext\f4\'B7\tab}The /ClientApp/e2e/ - folder containing some sample ent-to-end (E2E) tests built with the Protractor testing framework\par
+{\pntext\f4\'B7\tab}angular.json - created by CLI in the workspace root. This is the workspace configuration file and contains workspace-wide (\f1\lang1049\'e2 \'ec\'e0\'f1\'f8\'f2\'e0\'e1\'e0\'f5 \'e2\'f1\'e5\'e3\'ee \'f0\'e0\'e1\'ee\'f7\'fc\'e5 \'ef\'f0\'ee\'f1\'f2\'f0\'e0\'ed\'f1\'f2\'e2\'e0\f0\lang9 )\lang1033  configuration defaults for all build and development tools provided by Angular CLI\lang9\par
+
+\pard 
+{\pntext\f0 a.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcltr{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\lang1033\tab\tab Version - version configuration file\lang9\par
+{\pntext\f0 b.\tab}\lang1033\tab\tab newProjectRoot - root folder project\lang9\par
+{\pntext\f0 c.\tab}\lang1033\tab\tab projects - \f1\lang1049\'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e8 \'e4\'eb\'ff \'ea\'e0\'e6\'e4\'ee\'e3\'ee  \'ef\'f0\'ee\'e5\'ea\'f2\'e0 (\'ee\'f1\'ed\'ee\'e2\'ed\'ee\'e3\'ee \'e8 \'fe\'ed\'e8\'f2 \'f2\'e5\'f1\'f2\'fb \'e52\'e5)\f0\lang9\par
+{\pntext\f0 d.\tab}\f1\lang1049\tab\tab\f0\lang1033 defaultProject - set up current default folder for run commands from CLI if no use project name, it will be default\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\lang1033 package.json - files is the Node Package Manager (npm) configuration file. contains a list of npm packages that the developer wants to be restored (\f1\lang1049\'e2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc) \f0\lang1033 before the project starts.\f1\lang1049  \f0\lang1033 If i update packages in the packages.json, i shoud run command line from ClientApp - npm install\lang9\par
+{\pntext\f4\'B7\tab}\lang1033 tsconfig.json - \f1\lang1049\'e7\'ed\'e0\'f7\'e5\'ed\'e8\'ff \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'ee\'e2 \'ed\'f3\'e6\'ed\'fb \'e4\'eb\'ff \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e8 \f0\lang1033 Visual Studio \f1\lang1049\'e8 \'ea\'ee\'ec\'ef\'e8\'eb\'ff\'f2\'ee\'f0\'e0 \f0\lang1033 TS Compiler \f1\lang1049\'e4\'eb\'ff \'ef\'f0\'e0\'e2\'e8\'eb\'fc\'ed\'ee\'e9 \'f2\'f0\'e0\'ed\'f1\'eb\'ff\'f6\'e8\'e8 \'ea\'ee\'e4\'e0 \f0\lang1033 TS \f1\lang1049\'e2 \'ef\'e0\'ef\'ea\'e5 \f0\lang1033 ClientAPp\lang9\par
+{\pntext\f4\'B7\tab}\f1\lang1049 .editorconfig - \f0\lang1033 file with configuration for code editors\lang9\par
+{\pntext\f4\'B7\tab}\lang1033 package-lock.json - \f1\lang1049\'ef\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'e8\'ed\'f4\'f3 \'ee \'e2\'e5\'f0\'f1\'e8\'e8 \'e2\'f1\'e5\'f5 \'ef\'e0\'ea\'e5\'f2\'ee\'e2 \'f3\'f1\'f2\'e0\'ee\'e2\'eb\'e5\'ed\'ed\'fb\'f5 \'e2 \f0\lang1033 node_modules \f1\lang1049\'ef\'e0\'ef\'ea\'e5 \'ef\'f0\'e8 \'ef\'ee\'ec\'ee\'f9\'e8 \f0\lang1033 npm. \f1\lang1049\'c5\'f1\'eb\'e8 \'ff \'f5\'ee\'f7\'f3 \'e7\'e0\'ec\'e5\'ed\'e8\'f2\'fc \'ed\'e0 \f0\lang1033 Yarn \f1\lang1049\'f2\'ee \'ec\'ee\'e6\'ed\'ee \'ef\'f0\'ee\'f1\'f2 \'f3\'e4\'e0\'eb\'e8\'f2\'fc \'fd\'f2\'ee\'f2 \'f4\'e0\'e9\'eb\f0\lang9\par
+{\pntext\f4\'B7\tab}\f1\lang1049 /node_modules/ - \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'e2\'f1\'e5 \f0\lang1033 npm\f1\lang1049  \'ef\'e0\'ea\'e5\'f2\'fb\f0\lang9\par
+{\pntext\f4\'B7\tab}\f1\lang1049 tslint.json - \f0\lang1033 config \f1\lang1049\'e4\'eb\'ff \f0\lang1033 TSLint \f1\lang1049\'f0\'e5\'e4\'e0\'ea\'f2\'ee\'f0\'e0, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ef\'f0\'e8\'e2\'ee\'e4\'e8\'f2 \'ea\'ee\'e4 \'ea \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'ed\'ee\'ec\'f3 \'f1\'f2\'e8\'eb\'fe. \'d0\'e5\'f4\'e0\'ea\'f2\'ee\'f0\'e8\'ed\'e3 \'ea\'ee\'e4\'e0...\f0\lang9\par
+
+\pard\sa200\sl276\slmult1\f1\lang1049  \f0\lang9\par
+\b\fs36\lang1033 /ClientApp/src/\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0\fs28  /ClientApp/src/app/ - \f1\lang1049\'e2\'e5\'f1\'fc \'e8\'f1\'f5\'ee\'e4\'ed\'fb\'e9 \'ea\'ee\'e4 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'f2\'f3\'f2\f0\fs22\lang1033\par
+{\pntext\f0 2.\tab}\f1\fs28\lang1049 /ClientApp/src/assets/  - \'f1\'f2\'e0\'f2\'e8\'f7\'e5\'f1\'ea\'e8\'e5 \'f4\'e0\'e9\'eb\'fb \'e4\'eb\'ff \'ea\'eb\'e8\'e5\'ed\'f2\'f1\'ea\'ee\'e3\'ee \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff\f0\fs22\lang1033\par
+{\pntext\f0 3.\tab}\f1\fs28\lang1049  /ClientApp/src/environment/ - \'ef\'e0\'ef\'ea\'e0 \'f1\'e4\'e5\'f0\'e6\'e8\'f2 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e8 \'f1\'e1\'ee\'f0\'ea\'e8 \'e5\'b8 \'ee\'ef\'f6\'e8\'e8, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ed\'e0\'f6\'e5\'eb\'e5\'ed\'fb \'ed\'e0 \'f1\'ef\'e5\'f6\'e8\'e0\'eb\'fc\'ed\'ee\'e5 \'ee\'ea\'f0\'f3\'e6\'e5\'ed\'e8\'e5 \'e2 \'ed\'f3\'f2\'f0\'e8 \'e2\'e4\'e5 \'ef\'e0\'ef\'ea\'e8 \f0\lang1033 (prod.ts \f1\lang1049\'e4\'eb\'ff \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'f1\'f2\'e2\'e0, \'e2\'f2\'ee\'f0\'ee\'e9 \'e4\'eb\'ff \'f0\'e0\'e7\'f0\'e0\'e1\'ee\'f2\'ea\'e8)\f0\fs22\lang1033\par
+{\pntext\f0 4.\tab}\f1\fs28\lang1049 browserslistrc\f0\lang1033  - \f1\lang1049\'f4\'e0\'e9\'eb \'f1 \'ed\'e0\'f1\'f2\'f0\'ee\'e9\'ea\'e0\'ec\'e8 \'ee\'e1\'f9\'e5\'e3\'ee \'e4\'ee\'f1\'f2\'f3\'ef\'e0 \'ea \'e1\'f0\'e0\'f3\'e7\'e5\'f0\'e0\'ec \'e8 \'e2\'e5\'f0\'f1\'e8\'ff\'ec \f0\lang1033 node.js \f1\lang1049\'e4\'eb\'ff \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'f5 \f0\lang1033 Frontend\f1\lang1049  \'e8\'ed\'f1\'f2\'f0\'f3\'ec\'e5\'ed\'f2\'ee\'e2\f0\fs22\lang1033\par
+{\pntext\f0 5.\tab}\fs28 index.html \f1\lang1049 - \'ee\'f1\'ed\'ee\'e2\'ed\'e0\'ff \f0\lang1033 html \f1\lang1049\'f1\'f2\'f0\'e0\'ed\'e8\'f6\'e0 \'e2\'ed\'f3\'f2\'f0\'e8 \'ea\'ee\'f2\'ee\'f0\'ee\'e9 \'e1\'f3\'e4\'f3\'f2 \'ef\'ee\'ec\'e5\'f9\'e5\'ed\'fb \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'fb \'e7\'e0\'ef\'f0\'e0\'f8\'e8\'e2\'e0\'e5\'ec\'fb\'e5 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'e5\'ec\f0\fs22\lang1033\par
+{\pntext\f0 6.\tab}\f1\fs28\lang1049 karma.conf.js - \'e4\'eb\'ff \'f2\'e5\'f1\'f2\'ee\'e2\f0\fs22\lang1033\par
+{\pntext\f0 7.\tab}\f1\fs28\lang1049 main.ts - \'f2\'ee\'f7\'ea\'e0 \'e2\'f5\'ee\'e4\'e0 \'e2 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5. \'ca\'ee\'ec\'ef\'e8\'eb\'e8\'f0\'f3\'e5\'f2 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 \'f1 \'ef\'ee\'ec\'ee\'f9\'fc\'fe \f0\lang1033 JIT\f1\lang1049 -\'ea\'ee\'ec\'ef\'e8\'eb\'ff\'f2\'ee\'f0\'e0 \'e8 \'e7\'e0\'e3\'f0\'f3\'e6\'e0\'e5\'f2 \'ec\'ee\'e4\'f3\'eb\'fc \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'ea\'ee\'f0\'ed\'e5\'e2\'fb\'ec (\f0\lang1033 AppModule\f1\lang1049 )\f0\lang1033  \f1\lang1049\'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e2\'fb\'ef\'ee\'ed\'eb\'ff\'e5\'f2\'f1\'ff \'e2 \'e1\'f0\'e0\'f3\'e7\'e5\'f0\'e5. \'df \'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e3\'f3 \'fe\'e7\'e0\'f2\'fc \'ea\'ee\'ec\'ef\'e8\'eb\'ff\'f2\'ee\'f0 \f0\lang1033 AOT \f1\lang1049\'e4\'eb\'ff \'ef\'ee\'f1\'f2\'f0\'ee\'e5\'ed\'e8\'ff \'e8 \'ee\'e1\'f1\'eb\'f3\'e6\'e8\'e2\'e0\'ed\'e8\'ff \'ea\'ee\'ec\'e0\'ed\'e4 \f0\lang1033 CLI \f1\lang1049\'f1 \'f4\'eb\'e0\'e3\'ee\'ec --\f0\lang1033 aot\fs22\par
+{\pntext\f0 8.\tab}\f1\fs28\lang1049 polyfills.ts: Provides polyfill scripts for improving browser support\f0\fs22\lang1033\par
+{\pntext\f0 9.\tab}\f1\fs28\lang1049 styles.css: A list of CSS files that supply styles for a project\f0\fs22\lang1033\par
+{\pntext\f0 10.\tab}\f1\fs28\lang1049 test.ts: The main entry point for the project's unit tests\f0\fs22\lang1033\par
+{\pntext\f0 11.\tab}\fs28 tsconfig.*.json -\f1\lang1049  \'ea\'ee\'ed\'f4\'e8\'e3\'f3\'f0\'e0\'f6\'e8\'ff \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'e4\'eb\'ff \'f0\'e0\'e7\'eb\'e8\'f7\'ed\'fb\'f5 \'e0\'f1\'ef\'e5\'ea\'f2\'ee\'e2 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff. \f0\fs22\lang1033\par
+
+\pard\sa200\sl276\slmult1\f1\fs28\lang1049\tab\tab\f0\lang1033 .app,json \f1\lang1049 - \'e4\'eb\'ff \'f3\'f0\'ee\'e2\'ed\'ff \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff\par
+\tab\tab\f0\lang1033 .server.json - \f1\lang1049\'e4\'eb\'ff \'f3\'f0\'ee\'e2\'ed\'ff \'f1\'e5\'f0\'e2\'e5\'f0\'e0\par
+\tab\tab\f0\lang1033 .spec.json \f1\lang1049 - \'e4\'eb\'ff \'f2\'e5\'f1\'f2\'ee\'e2\par
+\f0\lang1033\tab\f1\lang1049\'cf\'e5\'f0\'e5\'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'fe\'f2\'f1\'ff \'ef\'e0\'f0\'e0\'ec\'e5\'f2\'f0\'fb \'e2 \'f3\'ed\'e8\'e2\'e5\'f0\'f1\'e0\'eb\'fc\'ed\'ee\'ec \'f4\'e0\'e9\'eb\'e5 \f0\lang1033 tsconfig\par
+\tab\f2 tslint.json: The TSLint configuration for the current project\par
+\f0\fs22\par
+\b\fs36 /ClientApp/app/\par
+\b0\f1\fs32\lang1049\'d1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'e4\'e0\'ed\'ed\'fb\'e5 \'e8 \'eb\'ee\'e3\'e8\'ea\'f3 \'ef\'f0\'ee\'e5\'ea\'f2\'e0, \'e2\'ea\'eb\'fe\'f7\'e0\'ff \'e2\'f1\'e5 \'ec\'ee\'e4\'f3\'eb\'e8 \'f1\'e5\'f0\'e2\'e8\'f1\'fb \f0\lang1033 Angular \f1\lang1049\'e8 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'fb\'fb \'e0 \'f2\'e0\'ea\'e6\'e5 \'f8\'e0\'e1\'eb\'ee\'ed\'fb \'e8 \'f1\'f2\'e8\'eb\'e8\f0\fs22\lang1033\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\fs32 app.module - \f1\lang1049\'f4\'e0\'e9\'eb \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \f0\lang1033 @NgModule \f1\lang1049\'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e8\'ec\'ef\'ee\'f0\'f2\'e8\'f0\'f3\'e5\'f2 \'ec\'ee\'e4\'f3\'eb\'e8, \'f1\'ee\'e1\'e8\'f0\'e0\'e5\'f2 \'e2\'f1\'e5 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'fb \'e8 \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'e5\'f2 \'f4\'f3\'ed\'ea\'f6\'e8\'ee\'ed\'e0\'eb\'fc\'ed\'ee\'f1\'f2\'fc \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff (\'e2\'f1\'e5 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff \f0\lang1033 Angular \f1\lang1049\'fd\'f2\'ee \'ed\'e0\'e1\'ee\'f0 \'e8\'e7 \'ee\'e4\'ed\'ee\'e3\'ee \'e8\'eb\'e8 \'ed\'e5\'f1\'ea\'ee\'eb\'fc\'ea\'e8\'f5 \f0\lang1033 @NgModule\f1\lang1049 , \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ef\'f0\'e5\'e4\'ee\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'ea\'ee\'ed\'f2\'e5\'ea\'f1\'f2 \'ea\'ee\'ec\'ef\'e8\'eb\'ff\'f6\'e8\'e8 (\'f1\'e2\'ff\'e7\'fc \'e8\'ec\'ef\'ee\'f0\'f2\'ee\'e2 \'e8 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'ee\'e2 - \'ea\'e0\'ea \'ea\'ee\'ed\'f2\'e5\'ea\'f1\'f2 \'ea\'ee\'ec\'ef\'e8\'eb\'ff\'f6\'e8\'e8) \'e4\'eb\'ff \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff)\f0\fs22\lang1033\par
+
+\pard\sa200\sl276\slmult1\f1\fs32\lang1049\'c2 \'e0\'ed\'e3\'f3\'eb\'ff\'f0\'e5 \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec \'ea\'ee\'f0\'ed\'e5\'e2\'ee\'e9 \'ec\'ee\'e4\'f3\'eb\'fc \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e3\'ee\'e2\'ee\'f0\'e8\'f2 \'ea\'e0\'ea \'f1\'ee\'e1\'f0\'e0\'f2\'fc \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 \'f2\'e5\'ec \'f1\'e0\'ec\'fb\'ec \'e8\'ed\'e8\'f6\'e8\'e0\'eb\'e8\'e7\'e8\'f0\'f3\'ff \'f6\'e8\'ea\'eb \'e6\'e8\'e7\'ed\'e8 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff. \'ca\'ee\'f0\'ed\'e5\'e2\'ee\'e9 \'ec\'ee\'e4\'f3\'eb\'fc \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'f1\'ef\'e8\'f1\'ee\'ea \'e2\'f1\'e5\'f5 \'e4\'ee\'f1\'f2\'f3\'ef\'ed\'fb\'f5 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e9 (\'f1\'ec \'f0\'e8\'f1\'f3\'ed\'ee\'ea Angular initialization cycle)\par
+\par
+\b\f0\fs36\lang1033 Server-Side AppModule for SSR\b0\par
+\fs22 folder app contains app.server.module.ts, which will be used to enable the Angular r Server-Side Rendering(SSR - \f1\lang1049\'f2\'e5\'f5\'ed\'ee\'eb\'ee\'e3\'e8\'ff \'ea\'ee\'f2\'ee\'f0\'e0\'ff \'ee\'f2\'ee\'e1\'f0\'e0\'e6\'e0\'e5\'f2 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff \'e0\'ed\'e3\'f3\'eb\'ff\'f0 \'ed\'e0 \'f1\'e5\'f0\'e2\'e5\'f0\'e5\f0\lang1033 )\par
+\b\fs36 AppComponent\b0\fs22\par
+\b NgModules \b0\f1\lang1049\'ff\'e2\'eb\'ff\'e5\'f2\'f1\'ff \'f1\'f2\'f0\'ee\'e8\'f2\'e5\'eb\'fc\'ed\'fb\'ec \'e1\'eb\'ee\'ea\'ee\'ec \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff, \'f2\'ee\'e3\'e4\'e0 \'ea\'e0\'ea \b Components \b0\'fd\'f2\'ee \'ea\'e8\'f0\'ef\'e8\'f7\'e8, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'e2 \'f1\'ee\'e2\'ee\'ea\'f3\'ef\'ed\'ee\'f1\'f2\'e8 \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'ff\'fe\'f2 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'e8\'ff. \'f2\'e0\'ea\'e8\'ec \'ee\'e1\'f0\'e0\'e7\'ee\'ec \'ef\'ee\'eb\'f3\'f7\'e0\'e5\'f2\'f1\'ff \'f7\'f2\'ee \'e0\'ed\'e3\'f3\'eb\'ff\'f0 \'fd\'f2\'ee \'e4\'e5\'f0\'e5\'e2\'ee \'e8\'e7 \'fd\'f2\'e8\'f5 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'ee\'e2 \'f0\'e0\'e1\'ee\'f2\'e0\'fe\'f9\'e8\'f5 \'e2\'ec\'ec\'e5\'f1\'f2\'e5\par
+\b Components  \b0\'fd\'f2\'ee \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'ff\'fe\'f2\'f1 \'f1\'ee\'e1\'ee\'e9 \'fd\'eb\'e5\'ec\'e5\'ed\'f2\'fb \'fd\'ea\'f0\'e0\'ed\'e0, \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \f0\lang1033 Angular \f1\lang1049\'ec\'ee\'e6\'e5\'f2 \'ec\'ee\'e4\'e8\'f4\'e8\'f6\'e8\'f0\'ee\'e2\'e0\'f2\'fc \'e8\'f1\'f5\'ee\'e4\'ff \'e8\'e7 \'eb\'ee\'e3\'e8\'ea\'e8 \'e8 \'e4\'e0\'ed\'ed\'fb\'f5 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff, \'e0 \'f2\'e0\'ea\'e6\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'f4\'f3\'ed\'ea\'f6\'e8\'ee\'ed\'e0\'eb\'fc\'ed\'ee\'f1\'f2\'fc, \'ed\'e5 \'f1\'e2\'ff\'e7\'e0\'ed\'ed\'f3\'fe \'ed\'e0\'ef\'f0\'ff\'ec\'f3\'fe \'f1 \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff\'ec\'e8. \'ca\'ce\'f0\'ed\'e5\'e2\'ee\'e9 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2 \'e4\'ee\'eb\'e6\'e5\'ed \'eb\'e5\'e6\'e0\'f2\'fc \'e2 \f0\lang1033 App \f1\lang1049\'e2 \'f2\'ee \'e2\'f0\'e5\'ec\'ff \'ea\'e0\'ea \'e4\'f0\'f3\'e3\'e8\'e5 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'fb \'ec\'ee\'e3\'f3\'f2 \'e1\'fb\'f2\'fc \'e2 \'ef\'ee\'e4 \'ef\'e0\'ef\'ea\'e0\'f5, \'e2 \'f2\'e0\'ea\'ee\'ec \'f1\'eb\'f3\'f7\'e0\'e5 \'e8\'ec\'ff \'ef\'e0\'ef\'ea\'e8 \'e1\'f3\'e4\'e5\'f2 \'ea\'e0\'ea \f0\lang1033 namepsace\par
+AppComponent consists of two files:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 app.component.ts: Defines the component logic, that is, the component class source code\par
+{\pntext\f0 2.\tab}app.component.html - \f1\lang1049\'f2\'e0\'ec \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed \f0\lang1033 html \f1\lang1049\'f8\'e0\'e1\'eb\'ee\'ed \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e1\'f3\'e4\'e5\'f2 \'f1\'e2\'ff\'e7\'fb\'e2\'e0\'f2\'fc\'f1\'ff \'f1 \f0\lang1033 AppComponent. (UI Layout structure) \f1\lang1049\'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'ec\'e0\'ea\'e5\'f2 \f0\lang1033 UI\f1\lang1049 , \'f7\'f2\'ee\'e1\'fb \'e2 \'f1\'e0\'ec\'ee\'ec \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'e5 \'ed\'e5 \'ef\'e8\'f1\'e0\'f2\'fc \f0\lang1033 html \f1\lang1049 , \'fd\'f2\'ee \f0\lang1033 good practice\par
+{\pntext\f0 3.\tab}\f1\lang1049 <*>.component.css: Defines the base CSS style sheet for a component. Just like the .html file, this file is optional and should always be used unless the component doesn't require UI styling.\par
+{\pntext\f0 4.\tab}\f2  <*>.component.spec.ts: Defines a unit test for the component.\f0\lang1033\par
+
+\pard\sa200\sl276\slmult1\b\fs32 Test App\par
+Jasmine \b0 - \f1\lang1049\'fd\'f2\'ee \'f4\'f0\'e5\'e9\'ec\'e2\'ee\'f0\'ea \'e4\'eb\'ff \'f2\'e5\'f1\'f2\'ee\'e2\par
+\b Karma \b0 - \'fd\'f2\'ee \'f3\'f2\'e8\'eb\'e8\'f2\'e0 \'e8\'f1\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'ff \'f2\'e5\'f1\'f2\'ee\'e2, \'ea\'ee\'f2\'ee\'f0\'e0\'ff \'e0\'e2\'f2\'ee\'ec\'e0\'f2\'e8\'f7\'e5\'f1\'ea\'e8 \'e7\'e0\'ef\'f3\'f1\'ea\'e0\'e5\'f2 \'e2\'fd\'e1 \'f1\'e5\'f0\'e2\'e5\'f0, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e1\'f3\'e4\'e5\'f2 \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'f2\'fc \f0\lang1033 JS \f1\lang1049\'ea\'ee\'e4 \'f2\'e5\'f1\'f2\'ee\'e2 \'ed\'e0 \f0\lang1033 Jasmine.\par
+\f1\lang1049\'e4\'eb\'ff \'e7\'e0\'ef\'f3\'f1\'ea\'e0 \'f2\'e5\'f1\'f2\'ee\'e2 \'ea\'ee\'ec\'e0\'ed\'e4\'e0 \par
+\i npm run ng test\i0\par
+\fs22\'f2\'e0\'ea\'e6\'e5 \'ec\'ee\'e6\'ed\'ee \'f3\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'fc \f0\lang1033 Angular Cli \f1\lang1049\'e3\'eb\'ee\'e1\'e0\'eb\'fc\'ed\'ee \'ef\'f0\'e8 \'ef\'ee\'ec\'ee\'f9\'e8 \'ea\'ee\'ec\'e0\'ed\'e4\'fb\par
+npm install -g @angular/cli\par
+ng test\f0\lang1033\par
+\b\fs36 Components \f1\lang1049\'cf\'d0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\b0\f0\fs28\lang1033 NavMenuComponent - \f1\lang1049\'e4\'eb\'ff \'ed\'e0\'e2\'e8\'e3\'e0\'f6\'e8\'e8 \'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'ff \'ef\'ee \'ee\'f1\'ed\'ee\'e2\'ed\'fb\'ec \'ef\'f0\'e5\'e4\'f1\'f2\'e0\'e2\'eb\'e5\'ed\'e8\'ff\'ec \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'ff. \'d2\'f3\'f2 \'f0\'e5\'e0\'eb\'e8\'e7\'ee\'e2\'e0\'ed\'e0 \'ed\'e0\'e2\'e8\'e3\'e0\'f6\'e8\'ff \'ef\'e0\'f0\'f8\'f0\'f3\'f2\'ee\'e2 \'ee\'ef\'f0\'e5\'e4\'e5\'eb\'e5\'ed\'ed\'fb\'f5 \'e2 \f0\lang1033 AppModule\fs22\par
+
+\pard\sa200\sl276\slmult1\b\fs36 TypeScript\par
+\b0\f1\lang1049\'fd\'f2\'ee \'ef\'ee\'e4\'ec\'ed\'ee\'e6\'e8\'f1\'f2\'e2\'ee \'ff\'e7\'fb\'ea\'ee\'e2 \'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff \'ea\'ee\'f2\'ee\'f0\'fb\'e5 \'ea\'ee\'ec\'ef\'e8\'eb\'e8\'f0\'f3\'fe\'f2\'f1\'ff \'e2 \f0\lang1033 JavaScript\par
+\f1\lang1049\'ef\'f0\'e8\'f7\'e8\'ed\'fb \'e5\'e3\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'ff \'e2\'ec\'e5\'f1\'f2\'ee \f0\lang1033 js:\par
+
+\pard 
+{\pntext\f0 a.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcltr{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\f1\lang1049\'f1\'f2\'e0\'f2\'e8\'f7\'e5\'f1\'ea\'e0\'ff \'f2\'e8\'ef\'e8\'e7\'e0\'f6\'e8\'ff, \'ea\'eb\'e0\'f1\'f1\'fb \'e8 \'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'fb. \'de\'e7\'e0\'ff \'e5\'e3\'ee \'e2 \f0\lang1033 Visual Studio \f1\lang1049\'ec\'ee\'e6\'ed\'ee \'e8\'e7\'e2\'eb\'e5\'f7\'fc \'e2\'fb\'e3\'ee\'e4\'f3 \'e8\'e7 \'e2\'f1\'f2\'f0\'ee\'e5\'ed\'ed\'ee\'e3\'ee IntelliSense (\'e2\'f1\'ef\'ee\'ec\'ee\'e3\'e0\'f2\'e5\'eb\'fc\'ed\'ee\'e5 \'f1\'f0\'e5\'e4\'f1\'f2\'e2\'ee \'ed\'e0\'ef\'e8\'f1\'e0\'ed\'e8\'ff \'ea\'ee\'e4\'e0) \'e8\'e7-\'e7\'e0 \'f7\'e5\'e3\'ee \'ec\'ee\'e6\'ed\'ee \'ef\'ee\'eb\'f3\'f7\'e8\'f2\'fc \'ef\'f0\'e5\'e8\'ec\'f3\'f9\'e5\'f1\'f2\'e2\'e0 \'ef\'ee \'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'e8\f0\fs22\lang9\par
+{\pntext\f0 b.\tab}\f1\fs36\lang1049\'e4\'eb\'ff \'e1\'ee\'eb\'fc\'f8\'ee\'e3\'ee \'ea\'eb\'e8\'e5\'ed\'f2\'f1\'ea\'ee\'e3\'ee \'ef\'f0\'ee\'e5\'ea\'f2\'e0 \f0\lang1033 TS \f1\lang1049\'ef\'ee\'e7\'e2\'ee\'eb\'e8\'f2 \'f1\'ee\'e7\'e4\'e0\'e2\'e0\'f2\'fc \'e1\'ee\'eb\'e5\'e5 \'ed\'e0\'e4\'b8\'e6\'ed\'fb\'e9 \'ea\'ee\'e4, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'e1\'f3\'e4\'e5\'f2 \'e2\'e5\'e7\'e4\'e5 \'f0\'e0\'e7\'e2\'e5\'f0\'f2\'fb\'e2\'e0\'f2\'fc\'f1\'ff \'e2\'e5\'e7\'e4\'e5, \'e3\'e4\'e5 \'e2\'fb\'ef\'ee\'eb\'ed\'ff\'e5\'f2\'f1\'ff \'ef\'f0\'ee\'f1\'f2\'ee\'e9 \f0\lang1033 js\par
+
+\pard\sa200\sl276\slmult1\par
+\b Creating a new app with the Angular CLI\b0\par
+\fs32 best practice create angular app through the Command-Line-Interface (CLI)\par
+\b Installing the Angular CLI \b0\par
+\fs22\lang9 npm install -g @angular/cli@11.0.1\par
+-g - options CLI installed globally, with will allow us to run the ng command-line tool in any folder\par
+npm install -g @angular/cli@latest (\f1\lang1049\'e4\'f4\'fb\'e5 \'ec\'f3\'ea\'fb\'f8\'f9\'f2\f0\lang9 )\par
+\b\fs28 Creating a new Angular app\b0\fs22\par
+ng new HealthCheck\f1\lang1049  (\f0\lang1033 ng Angular CLI app\f1\lang1049 )\f0\lang9\par
+\lang1033 cd \lang9 HealthCheck\par
+npm install --force (\f1\lang1049\'e7\'e0\'f1\'f2\'e0\'e2\'eb\'ff\'e5\'f2 \'e7\'e0\'e3\'f0\'f3\'e6\'e0\'f2\'fc \'ef\'e0\'ea\'e5\'f2\'fb \'e7\'e0\'ed\'ee\'e2\'ee - \'e5\'f1\'eb\'e8 \'ee\'f8\'e8\'e1\'ea\'e0 \'e1\'f3\'e4\'e5\'f2\f0\lang9 )\par
+npm update\par
+\b\fs32 Updating the Startup.cs file\b0\fs22\par
+If we want to launch the NG app instead of the VS app, we need to perform some\par
+(\f1\lang1049\'e2\'ed\'e5\'f1\'f2\'e8 \'ed\'e5\'ea\'ee\'f2\'ee\'f0\'fb\'e5\f0\lang9 ) changes to\par
+the Startup.cs file, which, as we know, is responsible for loading the front-end.\f1\lang1049  \'df(\f0\lang1033 Startup \f1\lang1049\'ee\'f2\'e2\'e5\'f7\'e0\'e5\'f2 \'e7\'e0 \'e7\'e0\'e3\'f0\'f3\'e7\'ea\'f3 \f0\lang1033 Front-End)\par
+Open that file, scroll down to the ConfigureServices method, and change the following line (line 27 or so):\par
+configuration.RootPath = "HealthCheck/dist";\par
+spa.Options.SourcePath = "HealthCheck";\lang9\par
+\par
+\b\fs32 The AppModule source code\b0\fs22\par
+\f1\fs28\lang1049\'c0\'ed\'e3\'f3\'eb\'ff\'f0 \'ec\'ee\'e4\'f3\'eb\'e8, \'f2\'e0\'ea\'e6\'e5 \'e8\'e7\'e2\'e5\'f1\'f2\'ed\'fb\'e5 \'ea\'e0\'ea NgModules \'e2\'e2\'e5\'e4\'e5\'ed\'ed\'fb\'e5 \'e2 \'c0\'ed\'e3\'f3\'eb\'ff\'f0 2\'ee\'e9 \'e2\'e5\'f0\'f1\'e8\'e8 \'ef\'f0\'e5\'ea\'f0\'e0\'f1\'ed\'e0\'ff \'e2\'ee\'e7\'ec\'ee\'e6\'ed\'ee\'f1\'f2\'fc \'ee\'f0\'e3\'e0\'ed\'e8\'e7\'ee\'e2\'e0\'f2\'fc \'e8 \'e7\'e0\'ef\'f3\'f1\'f2\'e8\'f2\'fc \'eb\'fe\'e1\'ee\'e5 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 \'c0\'ed\'e3\'f3\'eb\'ff\'f0. \'ce\'ed\'e8 \'ef\'ee\'e7\'e2\'ee\'eb\'ff\'fe\'f2 \'ee\'e1\'fa\'e5\'ea\'e4\'e8\'ed\'e8\'f2\'fc \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'fb, \'e4\'e8\'f0\'e5\'ea\'f2\'e8\'e2\'fb \'e8 \'ea\'e0\'ed\'e0\'eb\'fb \'e2 \'ef\'ee\'e2\'f2\'ee\'f0\'ed\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'ec\'fb\'e5 \'e1\'eb\'ee\'ea\'e8. \par
+\'ca\'e0\'e6\'e4\'ee\'e5 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'e5 \'e4\'ee\'eb\'e6\'ed\'ee \'e8\'ec\'e5\'f2\'fc \'f5\'ee\'f2\'ff\'e1\'fb \'ee\'e4\'e8\'ed \'f2\'e0\'ea\'ee\'e9 \'ec\'ee\'e4\'f3\'eb\'fc \'ed\'e0\'e7\'fb\'e2\'e0\'e5\'ec\'fb\'ec \f0\lang1033 Root \f1\lang1049\'e8 \'ef\'ee\'eb\'f3\'f7\'e0\'f2\'fc \'e8\'ec\'ff \'ea\'eb\'e0\'f1\'f1\'e0 AppModule\par
+AppModule is usually split into two main code blocks:\par
+
+\pard{\pntext\f4\'B7\tab}{\*\pn\pnlvlblt\pnf4\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\'f1\'ef\'e8\'f1\'ee\'ea \'e8\'f1\'ef\'ee\'f0\'f2\'e8\'f0\'f3\'e5\'ec\'fb\'f5 \'e8\'ed\'f1\'f2\'f0\'f3\'ea\'f6\'e8\'e9\'de \'f3\'ea\'e0\'e7\'e0\'f2\'e5\'eb\'e8 \'ed\'e0 \'e2\'f1\'e5 \'f1\'f1\'fb\'eb\'ea\'e8  \'ed\'e5\'ee\'e1\'f5\'ee\'e4\'e8\'ec\'fb\'e5 \'ef\'f0\'e8\'eb\'ee\'e6\'e5\'ed\'e8\'fe\f0\fs22\lang9\par
+{\pntext\f4\'B7\tab}\f1\fs28\lang1049 NgModule \'ec\'ee\'e4\'f3\'eb\'fc\'de \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'ea\'ee\'eb\'eb\'e5\'ea\'f6\'e8\'fe \'ec\'e0\'f1\'f1\'e8\'e2\'ee\'e2 \'e8\'e7 \'ee\'e1\'fa\'e5\'ea\'f2\'ee\'e2 \'c0\'ed\'e3\'f3\'eb\'ff\'f0\'e0\f0\lang1033 : \f1\lang1049\'e4\'e8\'f0\'e5\'ea\'f2\'e8\'e2\'fb, \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2\'fb, \'ef\'e0\'e9\'ef\'fb (\'ea\'e0\'ed\'e0\'eb\'fb), \'ec\'ee\'e4\'f3\'eb\'e8, \'ef\'f0\'ee\'e2\'e0\'e9\'e4\'e5\'f0\'fb \'e8 \'f2\'e4. \'cf\'ee\'f1\'eb\'e5\'e4\'ed\'e8\'e9 \'f1\'ee\'e4\'e5\'f0\'e6\'e8\'f2 \'ea\'ee\'ec\'ef\'ee\'ed\'e5\'ed\'f2 \'e7\'e0\'e3\'f0\'f3\'e7\'ea\'e8, \'ea\'ee\'f2\'ee\'f0\'fb\'e9 \'ff \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'fe \'e2 \'e1\'ee\'eb\'fc\'f8\'e8\'ed\'f1\'f2\'e2\'e5 \'f1\'f6\'e5\'ed\'e0\'f0\'e8\'e5\'e2 AppComponent\f0\fs22\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+\b\f1\fs28\lang1049 Adding the AppRoutingModule\b0\par
+\cf1\f3\fs19\lang9 import\cf2  \{ NgModule \} \cf1 from\cf2  \cf3 "@angular/core"\cf2 ;\par
+\cf1 import\cf2  \{ Routes, RouterModule \} \cf1 from\cf2  \cf3 "@angular/router"\cf2 ;\par
+\cf1 import\cf2  \{ HomeComponent \} \cf1 from\cf2  \cf3 "./home/home.component"\cf2 ;\par
+\cf1 const\cf2  routes: Routes = [\par
+  \{ path: \cf3 ''\cf2 , component: HomeComponent, pathMatch: \cf3 'full'\cf2  \}\par
+];\par
+@NgModule(\{\par
+  imports: [RouterModule.forRoot(routes)],\par
+  exports: [RouterModule]\par
+\})\par
+\cf1 export\cf2  \cf1 class\cf2  \cf4 AppRoutingModule\cf2  \{ \}\par
+\cf0\f1\fs22\lang1049\'e2 \f0\lang1033 app.module \f1\lang1049\'e2 \f0\lang1033 imports \f1\lang1049\'e2\'ec\'e5\'f1\'f2\'ee \'f2\'e5\'ea\'f3\'f9\'e5\'e3\'ee \'f0\'ee\'f3\'f2\'e8\'ed\'e3\'e0 \'e4\'ee\'e1\'e0\'e2\'e8\'f2\'fc \'ec\'ee\'e4\'f3\'eb\'fc \'f0\'ee\'f3\'f2\'e8\'ed\'e3\'e0 AppRoutingModule\par
+\b\fs28 Reasons for using a dedicated routing module\b0\fs22\par
+\fs28\'ef\'f0\'ee\'f9\'e5, \'e7\'e0\'ec\'e5\'ed\'e8\'eb \'e2\'f1\'e5 \'f1\'f1\'fb\'eb\'ea\'e8 \'e2 \'e8\'ec\'ef\'ee\'f0\'f2\'e5 \'ed\'e0 \'ee\'e4\'e8\'ed \'ec\'ee\'e4\'f3\'eb\'fc AppRoutingModule \par
+\b Updating the NavMenu\b0\par
+\f0\fs22\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
